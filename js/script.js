@@ -34,6 +34,34 @@ header.classList.add('transparent');
 window.addEventListener('scroll', handleScroll);
 
 
+var acc = document.getElementsByClassName("accordion");
+var displayedImage = document.getElementById("displayedImage");
+
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var panel = this.nextElementSibling;
+    var isActive = this.classList.contains("active");
+
+    // Close all panels
+    for (var j = 0; j < acc.length; j++) {
+      acc[j].classList.remove("active");
+      acc[j].nextElementSibling.style.maxHeight = null;
+    }
+
+    // If it was not active, open it and change the image
+    if (!isActive) {
+      this.classList.toggle("active");
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      // Change the image based on the clicked accordion
+      displayedImage.src = this.getAttribute("data-image");
+    } else {
+      // If the clicked section was already active, reset to default image
+      displayedImage.src = "img/all.png";
+    }
+  });
+}
+
+
 
 
 

@@ -179,26 +179,99 @@ body, html {
 
 
 
-.container {
-  position: relative;
-  height: 100vh;
-  overflow-y: auto;
+.products-bg {
+  display: flex;
 }
 
-.bg-static {
-  position: sticky;
-  top: 100px;
-  background-color: #85c1e9;
-  padding: 20px;
+.accordion-container {
+  width: 50%; 
 }
 
-
-.sec1 {
-  height: 600px;
-  background-color: blue;
+.accordion {
+  background: none;
+  color: #ffffff80;
+  cursor: pointer;
+  padding: 20px 0px;
+  width: 100%;
+  border-bottom: none;
+  border-top: solid 1px #d8d8d8;
+  border-right: none;
+  border-left: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: 800;
+  transition: 0.4s;
+  font-family: Proxima-bold;
 }
-.sec2 {
-  height: 600px;
-  background-color: green;
+
+.accordion-container .active, .accordion:hover {
+  background: none;
+  color:#fff;
 }
 
+/*.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion-container .active:after {
+  content: "\2212";
+}*/
+
+.panel {
+  padding: 0px;
+  background: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+.panel p:nth-child(2) {
+  margin-bottom: 30px;
+}
+.panel p:nth-child(1) {
+  margin-top: 0px;
+}
+.image-container {
+  width: 50%;
+  height:100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0rem 5rem;
+}
+
+.image-container img {
+  max-width: 200px;
+  height: auto;
+}
+.products{
+    background: linear-gradient(266.81deg, #7b4cdc -1.96%, #c3c9ff 120.82%);
+    margin-top:0rem;
+    padding: 100px 155px;
+}
+.products-bg{
+}
+.accordion-container p {
+    color:#fff;
+    font-family: Proxima-regular;
+}
+.products-head{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding:0px 0px 60px 0px;
+}
+.products-head h1{
+    line-height: 50px;
+    color: var(--white);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: Proxima-light;
+    width:80%;
+}
