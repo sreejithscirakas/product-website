@@ -56,7 +56,7 @@ for (var i = 0; i < acc.length; i++) {
       displayedImage.src = this.getAttribute("data-image");
     } else {
       // If the clicked section was already active, reset to default image
-      displayedImage.src = "img/all.png";
+      displayedImage.src = "img/all-v1.png";
     }
   });
 }
