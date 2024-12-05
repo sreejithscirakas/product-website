@@ -1,6 +1,6 @@
     	@font-face {
 		    font-family: 'synthese-book';
-		    src: url('./font/syntheseweb-regular-TRIAL-BF63b781f35bc84.woff') format('woff');
+		    src: url('../font/syntheseweb-regular-TRIAL-BF63b781f35bc84.woff') format('woff');
 		}
         * {
     padding: 0;
