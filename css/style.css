@@ -93,7 +93,7 @@
         }
         .container-main{
             
-  background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)), url(bg-2.png);
+  background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)), url(./bg-2.png);
 
   position: relative; /* Keeps the background fixed during scrolling */
     top: 0;
