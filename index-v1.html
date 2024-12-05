@@ -305,7 +305,7 @@ function prevDiv() {
 }
 
 function startSlideShow() {
-    slideInterval = setInterval(nextDiv, 6000); // Auto slide every 8 seconds
+    slideInterval = setInterval(nextDiv, 8000); // Auto slide every 8 seconds
 }
 
 function stopSlideShow() {
@@ -331,20 +331,7 @@ window.onload = function() {
 // sliderContainer.addEventListener('mouseover', stopSlideShow);
 // sliderContainer.addEventListener('mouseout', startSlideShow);
 
-// Intersection Observer to start auto slide when the target div is in view
-const targetDiv = document.getElementById('product'); // target div ID
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            startSlideShow(); // Start the slideshow when the target div is in view
-        } else {
-            stopSlideShow(); // Stop the slideshow when the target div is out of view
-        }
-    });
-}, { threshold: 0.1 }); // Adjust threshold as needed
-
-observer.observe(targetDiv); // Start observing the target div
 
 </script>
 
