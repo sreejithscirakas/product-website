@@ -5,196 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Ahimsa Global - Empowering Health Access</title>
-    <style>
-        * {
-    padding: 0;
-    margin: 0;
-}
-        html, body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            width: 100%;
-            height:100%;        
-        }
-        .header {
-            background-color: transparent;
-            text-align: center;
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 900;
-            width: calc(100% - 100px);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-        }
-        .header img {
-            height: 60px;
-        }
-        .header nav a {
-            margin-left: 24px;
-            text-decoration: none;
-            color: #555;
-            font-size: 20px;
-        }
-        
-        .container {
-    display: flex;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-}
-        
-        .content1 h1 {
-            font-size: 20px;
-            color: #000;
-            margin-bottom: 10px;
-            padding: 0px 70px;
-        }
-        .content1 h2 {
-    font-size: 35px;
-    color: #000;
-    margin-bottom: 35px;
-    padding: 0px 70px;
-}
-        .content1 p {
-            font-size: 18px;
-            color: #000;
-        }
-        .content1 p span {
-            color: #e63946;
-            font-weight: initial;
-        }
-        .content2 h1 {
-            font-size: 36px;
-            color: #000;
-            margin-bottom: 20px;
-        }
-        .content2 h2 {
-            font-size: 48px;
-            color: #000;
-            margin-bottom: 20px;
-        }
-        .content2 p {
-            font-size: 20px;
-            color: #000;
-        }
-        .content2 p span {
-            color: #e63946;
-            font-weight: initial;
-        }
-        .container-main{
-            
-            width:100%;
-            height:100%;
-            padding: 0;
-    overflow: hidden;
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)), url(bg-1.png);
-
-
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-        }
-        .content1{
-            
-            width:70%;
-        }
-        .content2 {
-    width: 30%;
-    padding: 20px 30px;
-}
-.txt-gray{
-    opacity: 50%;
-}
-.txt-dark{
-    color:#78268a;
-} 
-.content_sub1 p {
-    padding: 0px 100px 100px 20px;
-    line-height: 30px;
-}
-.sub2_border{
-    border-bottom:solid 1px #ddd;
-    display: flex;
-    align-items: center;
-    width: 80%;
-}
-.sub2_border-left {
-    border-left: solid 1px #ddd;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    transform: translate(10px, 10px);
-}
-.sub2_border-left p{
-    font-size: 16px;
-    opacity: 75%;
-}
-.sub2_border-left p span{
-    font-weight: initial;
-} 
-.nav img{
-    width:25px;
-    height: auto;
-}
-.nav{
-    display: flex;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container-main">
-        <div class="header">
-            <img src="logo.svg" alt="Ahimsa Logo">
-            <nav class="nav">
-                <a href="#">
-                    <img src="team.svg" alt="">
-                    <p>ABOUT US</p>
-                </a>
-                <a href="#">
-                    <img src="product.svg" alt="">
-                    <p>PRODUCTS</p>
-                </a>
-                <a href="#">
-                    <img src="hand.svg" alt="">
-                    <p>GET IN TOUCH</p>
-                </a>
-            </nav>
-        </div>
-        
-        <div class="container">
-            <div class="content1">
-                <h1>Closer to Care:</h1>
-                <h2><span class="txt-dark">Empowering</span> <span class="txt-gray">Health Access Through Technology</span></h2>
-            </div>
-            <div class="content2">
-                <div class="content_sub1">
-                    <p>Ahimsa Global <span>is dedicated to developing innovative solutions</span> that tackle public healthcare inequities globally, ensuring access to quality care for underserved populations.</p>
-                </div>
-                <div class="content_sub2">
-                    <div class="sub2_border">
-                        <div class="sub2_border-left">
-                            <p>By leveraging <span>advanced technology</span> and <span>data-driven insights</span>, we aim to empower communities and transform healthcare delivery systems for a more equitable future.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<div class="header">
+		<div class="logo">
+        	<img src="logo.svg" alt="Ahimsa Logo">
+       	</div>
+        <nav class="nav">
+            <a href="#">
+                <img src="team.svg" alt="Ahimsa Logo">
+                <p>ABOUT US</p>
+            </a>
+            <a href="#">
+                <img src="product.svg" alt="Ahimsa Logo">
+                <p>PRODUCTS</p>
+            </a>
+            <a href="#">
+                <img src="hand.svg" alt="Ahimsa Logo">
+                <p>GET IN TOUCH</p>
+            </a>
+        </nav>
     </div>
+    <div class="image-container">
+	    <div class="text-container">
+	    	<div class="content_left">
+				<div class="content_sub0">
+		            <h1>Closer to Care:</h1>
+		            <h2><span class="txt-dark">Empowering</span> <span class="txt-gray">Health Access Through Technology</span></h2>
+		        </div>
+		    </div>
+		    <div class="content_right">
+		        <div class="content_sub1">
+		            <p>Ahimsa Global <span class="txt-dark">is dedicated to developing innovative solutions</span> that tackle public healthcare inequities globally, ensuring access to quality care for underserved populations.</p>
+		        </div>
+		        <div class="content_sub2">
+		            <p>By leveraging <span class="txt-dark">advanced technology and data-driven insights</span>, we aim to empower communities and transform healthcare delivery systems for a more equitable future.</p>
+		        </div>
+	    	</div>
+		</div>
+    </div>
+  <div class="container-main1" style="height:100vh; width:100%; display: flex; justify-content: center; align-items: center;background: #635042;">
+    <svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+        <defs>
+            <clipPath id="clip-path" style="transform: translate(170px, 100px);">
+                <path class="cls-1" d="M202.82,191.37s-.7-23.29,28.94-19.77c17.88,2.13,36.05.14,54,1.45,0,0,5.65.41,78.71-1.81,0,0,24.71.36,22.59,26.48a21.6,21.6,0,0,0,19.06,13.41H571.29s16.59-4.94,15.89-22.58c0,0,0-15.2,22.94-17.31h360s21.88,1.42,21.17,21.54l0,24s2.1,14.47,26.45,14.12h18.71s16.94,3.52,17.29,20.46l.36,274.59s-.71,20.82-20.83,21.17H945.76s-19.41,0-20.47,19.77c0,0-1.76,18.7-27.53,16.94l-423.17-1.41s-20.47,3.88-22.59-18c0,0-2.47-19.77-16.94-16.59L218,546.78s-17.65-3.88-15.18-23.29Z" transform="translate(-202.58 -171.24)"/>
+            </clipPath>
+        </defs>
+        <foreignObject width="100%" height="100%">
+            <video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover; clip-path: url(#clip-path);">
+                <source src="./img/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </foreignObject>
+    </svg>
+</div>
+
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide active">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <div class="dots">
+        <span class="dot" ></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+<script type="text/javascript">
+let currentSlide = 0;
+const slideInterval = 3000; // Change slide every 3 seconds
+let autoSlide;
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    slides[currentSlide].classList.remove('active');
+    
+    
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    
+    slides[currentSlide].classList.add('active');
+    
+    document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    updateDotsVisibility();
+}
+
+function goToSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    slides[currentSlide].classList.remove('active');
+    
+    
+    currentSlide = index;
+    
+    slides[currentSlide].classList.add('active');
+    
+    document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    updateDotsVisibility();
+}
+
+// Function to start auto sliding
+function startAutoSlide() {
+    autoSlide = setInterval(() => {
+        changeSlide(1); // Change to the next slide
+    }, slideInterval);
+}
+
+// Function to stop auto sliding
+function stopAutoSlide() {
+    clearInterval(autoSlide);
+}
+
+// Function to update dot visibility based on the current slide
+function updateDotsVisibility() {
+    const dots = document.querySelectorAll('.dot');
+    
+    // Reset all dots
+    dots.forEach(dot => dot.style.display = 'none');
+
+    if (currentSlide === 0) {
+        // Slide 1: Show 3 dots
+        dots[0].style.display = 'inline-block';
+        dots[1].style.display = 'inline-block';
+        dots[2].style.display = 'inline-block';
+    } else if (currentSlide === 1) {
+        // Slide 2: Show 1 dot near the left and 1 dot near the right
+        dots[0].style.display = 'inline-block'; // Left dot
+        dots[1].style.display = 'inline-block'; // Right dot
+        dots[2].style.display = 'none'; // Hide the third dot
+    } else if (currentSlide === 2) {
+        // Slide 3: Show no dots
+        dots[0].style.display = 'none';
+        dots[1].style.display = 'none';
+        dots[2].style.display = 'none';
+    }
+}
+
+// Start auto sliding when the page loads
+window.onload = () => {
+    startAutoSlide();
+    updateDotsVisibility(); // Initial check for dot visibility
+};
+
+// Optional: Stop auto sliding on mouse over and resume on mouse out
+const slider = document.querySelector('.slider');
+slider.addEventListener('mouseover', stopAutoSlide);
+slider.addEventListener('mouseout', startAutoSlide);
+</script>
+
 </body>
 </html>
