@@ -176,7 +176,7 @@
                         <div class="dot"></div>
                     </div>
                     <?xml version="1.0" encoding="iso-8859-1"?>
-                    <svg  version="1.1" id="nextdiv3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    <svg fill="#6a6a6aad" version="1.1" id="nextdiv3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                          viewBox="0 0 492.004 492.004" xml:space="preserve">
                     <g>
                         <g>
@@ -295,17 +295,21 @@ function showDiv(index) {
 }
 
 function nextDiv() {
+    stopSlideShow(); // Stop auto-slide when next is clicked
     currentDiv = (currentDiv + 1) % divs.length; // Loop back to the first div
     showDiv(currentDiv);
+    startSlideShow(); // Restart auto-slide after manual navigation
 }
 
 function prevDiv() {
+    stopSlideShow(); // Stop auto-slide when previous is clicked
     currentDiv = (currentDiv - 1 + divs.length) % divs.length; // Loop back to the last div
     showDiv(currentDiv);
+    startSlideShow(); // Restart auto-slide after manual navigation
 }
 
 function startSlideShow() {
-    slideInterval = setInterval(nextDiv, 8000); // Auto slide every 8 seconds
+    slideInterval = setInterval(nextDiv, 5000); // Auto slide every 5 seconds
 }
 
 function stopSlideShow() {
@@ -325,14 +329,6 @@ window.onload = function() {
     showDiv(currentDiv);
     startSlideShow(); // Start the slideshow
 };
-
-// Add mouseover and mouseout events to stop and start the slideshow
-// const sliderContainer = document.querySelector('.p1_slider-container'); // slider container class or ID
-// sliderContainer.addEventListener('mouseover', stopSlideShow);
-// sliderContainer.addEventListener('mouseout', startSlideShow);
-
-
-
 </script>
 
 </body>
