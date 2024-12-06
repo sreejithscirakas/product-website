@@ -390,7 +390,7 @@
     .content_sub0 {
         width: 100%;
         transform: translate(-0%, 0%);
-        padding-bottom: 10%;
+        padding-bottom: 5%;
     }
     .content_right, .content_left {
         width: 100%;
@@ -406,7 +406,6 @@
         left: 0%;
         transform: translate(-0%, 50%);
         position: relative;
-        padding-top: 30px;
     }
     .content_sub1 p {
         font-size: 14px;
@@ -420,12 +419,20 @@
         flex-wrap: wrap;
         align-items: center;
         padding: 15px;
-        margin-top: 95%;
+        margin-top: 45%;
     }
     .content_sub0 h1 {
         font-size: 20px;
     }
     .content_sub0 h2 {
         font-size: 25px;
+    }
+    .video-container {
+        height: auto;
+        margin-top:0px;
+    }
+    .image-container{
+        background-size: contain;
+        margin-top: 73px;
     }
 }
