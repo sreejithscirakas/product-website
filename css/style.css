@@ -365,6 +365,9 @@
     font-size: 16px;
     font-family: 'syntheseweb-light', sans-serif;
 }
+.image-container-mv{
+    display: none;
+}
 
 @media only screen and (max-width: 768px){
 	.header nav a {
