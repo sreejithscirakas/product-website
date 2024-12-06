@@ -470,10 +470,10 @@
     }
     .p1_slider1-img-caption, .p1_slider2-img-caption {
         position: absolute;
-        transform: translate(0px, -80px);
+        transform: translate(0px, -90px);
         background: #8080809e;
         width: 30%;
-        height: 30%;
+        height: 14%;
         color: #fff;
         display: flex;
         align-items: flex-end;
@@ -481,6 +481,8 @@
     .p1_slider1-img-caption p, .p1_slider2-img-caption p {
         padding: 10px;
         font-size: 12px;
+        position: absolute;
+        top: 4px;
     }
     .p1_slider2-txt img, .p1_slider1-txt img{
         height:100px;
