@@ -18,6 +18,9 @@
         #nextdiv3{
             fill:#c8c8c8;
         }
+        #div3 .dot{
+            background:#c8c8c8;
+        }
         * {
             padding: 0;
             margin: 0;
