@@ -505,7 +505,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: 15px;
+        padding: 30px 15px;
         margin-top: 0%;
     }
     .content_sub0 h1 {
@@ -528,7 +528,7 @@
         background-position: left top;
     }
     .image-container-mv{
-        display: block;
+        display: flex;
         width:100%;
         height:auto;
         margin-top: 70px;
